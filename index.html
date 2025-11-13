@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jmc4tfq.css">
+    <style>
+        .navbar li a {
+            display: block;
+            padding: 12px 20px;
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            position: relative;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .navbar li a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 0;
+            height: 2px;
+            background-color: #FFE1A8; 
+            transition: width 0.3s ease;
+        }
+
+        .navbar li a:hover::after {
+            width: 100%;
+        }
+
+        .navbar li a:hover {
+            color: #FFE1A8;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">The Sandman: Museum Exibit Project</h2>
+    <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="biography.html">Biography</a></li>
+        <li><a href="historical analysis.html">Historical Analysis</a></li>
+        <li><a href="literary analysis.html">Literary Analysis</a></li>
+        <li><a href="sources.html">Sources</a></li>
+        <li><a href="game.html">GAME?</a></li>
+     
+    </ul>
+    <div class="home-grid-container">
+        <div class="home-grid-item home-side-content">
+            <h1 style="text-align: center;">Author: E.T. Hoffman</h1>
+            <p>Ernst Theodor Amadeus Hoffmann (born Ernst Theodor Wilhelm Hoffmann; 24 January 1776 – 25 June 1822) was a German Romantic author of fantasy and gothic horror, a jurist, composer, music critic and artist</p>
+            <p>More on E.T. Hoffman's life on the <a href="biography.html">Biography</a> page.</p>
+        </div>
+        <div class="home-grid-item home-main-img"><img src="images/home_pg.jpg", width="1400px"></div>
+        <div class="home-grid-item home-main-1">
+            <h2>Our Book:</h2>
+            <p>Our book is the Sandman by E.T. Hoffman</p>
+            <p>"The Sandman" is a psychological horror story that explores themes of fear, reality versus fantasy, and the impact of childhood trauma through the experiences of Nathanael, who becomes obsessed with the figure of the Sandman.</p>
+        </div>
+        <div class="home-grid-item home-support-1">
+            <h3>Historical Analysis</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Find more on our <a href="historical_analysis.html">Historical Analysis </a> page!</p>
+        </div>
+        <div class="home-grid-item home-support-2">
+            <h3>Literary Analysis</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Learn more our Literary Analysis <a href="literary_analysis.html">here</a>.</p>
+        </div>
+        <div class="home-grid-item home-main-2">
+            <h4><em>Play Our Game!</em></h4>
+            <p>IDK WHATEVER OUR INTERACTIVE ELEMENT IS HERE</p>
+            <p>Play it <a href="GAME?.html">here</a>.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>page created by Shivali Sarvaiya</p>
+    </div>
+</body>
+</html>
