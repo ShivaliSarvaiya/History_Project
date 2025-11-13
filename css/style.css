@@ -1,16 +1,25 @@
-body {
-    background-color: #0a6b7a;
+h2 {
+    background-color: #81c9d4;
     margin: 0;
     font-family: "Optima", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
     /* match or slightly exceed footer height */
-    padding-bottom: 60px;
+    padding-top: 30px;
+
+}
+
+body {
+    background-color: azure;
+    margin: 0;
+    font-family: "Optima", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    padding-bottom: 30px;
+    /* match or slightly exceed footer height */
+    padding-top: 30px;
 
 }
 
 .navbar {
     list-style-type: none;
-    background-color: #1ab3b8;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -19,13 +28,28 @@ body {
     font-family: "Optima", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 }
 
+
+.navbar a.active {
+    border: 2px solid #D76497;
+    border-radius: 15px;
+    font-weight: bold;
+    background-color: #fff;
+    color: #D76497;
+}
+
+
 .navbar li a {
     display: block;
+    width: 135px;
     padding: 12px 20px;
     color: black;
     text-decoration: none;
-    font-size: 18px;
+    background-color: #1ab3b8;
+    font-size: 17px;
+    text-align: center;
     position: relative;
+    margin: 7px;
+    border-radius: 15px;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -52,62 +76,6 @@ body {
 
 .navbar li a:hover {
     color: #FFE1A8;
-}
-
-.home-grid-container {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto auto;
-    padding: 10px;
-}
-
-.home-grid-item {
-    background-color: #e9edc9;
-    padding: 10px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.home-main-img {
-    grid-column: 1 / span 3;
-    grid-row: 2;
-}
-
-.home-main-1 {
-    grid-column: 2 / span 2;
-    grid-row: 3;
-    background-color: #fefae0;
-    padding: 5px 25px;
-}
-
-.home-main-2 {
-    grid-column: 2 / span 2;
-    grid-row: 5;
-    background-color: #fefae0;
-    padding: 5px 25px;
-}
-
-.home-support-1 {
-    grid-column: 2;
-    grid-row: 4;
-    background-color: #faedcd;
-    padding: 5px 25px;
-}
-
-.home-support-2 {
-    grid-column: 3;
-    grid-row: 4;
-    background-color: #faedcd;
-    padding: 5px 25px;
-}
-
-.home-side-content {
-    grid-column: 1;
-    grid-row: 3 / span 3;
-    background-color: #e9edc9;
-    color: rgb(0, 0, 0);
-    padding: 5px 25px;
 }
 
 .footer {
