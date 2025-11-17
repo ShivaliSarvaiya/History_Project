@@ -186,6 +186,12 @@ body {
     background-color: #bc6c25;
 }
 
+.game-intro-block {
+    width: 300px;
+    border: 3px #372b1e;
+    border-radius: 10px;
+}
+
 
 @keyframes bounce {
 

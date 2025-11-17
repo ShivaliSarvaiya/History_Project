@@ -1,7 +1,7 @@
 const storyElement = document.getElementById("story");
 const choicesElement = document.getElementById("choices");
 
-// Story structure
+//story nodes and structures (ads application !!)
 const storyNodes = {
   start: {
     text: "You wake up in a dark forest. Two paths lie ahead...",
@@ -61,23 +61,21 @@ function resetStory() {
 }
 
 function showStory(nodeKey) {
-  // If restarting → clear everything
   if (nodeKey === "start") {
     resetStory();
   }
 
   const node = storyNodes[nodeKey];
 
-  // Append new text
   storyElement.innerHTML += `<p>${node.text}</p>`;
 
-  // Auto-scroll to bottom
+  //autoscrolllll
   storyElement.scrollTop = storyElement.scrollHeight;
 
-  // Clear old buttons
+  //clear old text
   choicesElement.innerHTML = "";
 
-  // Add new options
+  //new options !!
   node.choices.forEach(choice => {
     const button = document.createElement("button");
     button.textContent = choice.text;
