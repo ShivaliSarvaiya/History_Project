@@ -26,9 +26,7 @@ const storyNodes = {
   },
   rest: {
     text: "You rest peacefully and feel safe. You survived your adventure!",
-    choices: [
-      { text: "Play again", next: "start" }
-    ]
+    choices: [{ text: "Play again", next: "start" }]
   },
   explore: {
     text: "You discover a hidden village. The people welcome you warmly!",
@@ -46,28 +44,40 @@ const storyNodes = {
   },
   fight: {
     text: "You bravely fight the monster and escape! You’re a hero!",
-    choices: [
-      { text: "Play again", next: "start" }
-    ]
+    choices: [{ text: "Play again", next: "start" }]
   },
   caught: {
     text: "The monster captures you... Game Over.",
-    choices: [
-      { text: "Try again", next: "start" }
-    ]
+    choices: [{ text: "Try again", next: "start" }]
   },
   happyEnding: {
     text: "You live happily ever after with the villagers. The End!",
-    choices: [
-      { text: "Restart", next: "start" }
-    ]
+    choices: [{ text: "Restart", next: "start" }]
   }
 };
 
+function resetStory() {
+  storyElement.innerHTML = "";
+}
+
 function showStory(nodeKey) {
+  // If restarting → clear everything
+  if (nodeKey === "start") {
+    resetStory();
+  }
+
   const node = storyNodes[nodeKey];
-  storyElement.textContent = node.text;
+
+  // Append new text
+  storyElement.innerHTML += `<p>${node.text}</p>`;
+
+  // Auto-scroll to bottom
+  storyElement.scrollTop = storyElement.scrollHeight;
+
+  // Clear old buttons
   choicesElement.innerHTML = "";
+
+  // Add new options
   node.choices.forEach(choice => {
     const button = document.createElement("button");
     button.textContent = choice.text;
@@ -76,3 +86,6 @@ function showStory(nodeKey) {
     choicesElement.appendChild(button);
   });
 }
+
+// Start the story the first time
+showStory("start");
