@@ -4,7 +4,7 @@ const choicesElement = document.getElementById("choices");
 //story nodes and structures (ads application !!)
 const storyNodes = {
   start: {
-    text: "You wake up in a dark forest. Two paths lie ahead...",
+    text: "You walk into a clearing with lots of things in it and you are nathaniel",
     choices: [
       { text: "Take the left path", next: "leftPath" },
       { text: "Take the right path", next: "rightPath" }
