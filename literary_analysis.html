@@ -8,165 +8,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/jmc4tfq.css">
 </head>
-
-<style>
-    body {
-        font-family: "proxima-nova", sans-serif;
-        line-height: 1.55;
-    }
-
-    h2, h3, h4 {
-        font-family: "minion-pro", serif;
-        margin-top: 0;
-    }
-
-    h2 {
-        font-size: 2rem;
-        font-weight: 700;
-        text-align: center;
-    }
-
-    h3 {
-        font-size: 1.4rem;
-        text-align: center;
-        font-weight: 700;
-        margin-bottom: 18px;
-    }
-
-    h4 {
-        font-size: 1.15rem;
-        margin: 12px 0 6px;
-        font-weight: 600;
-    }
-
-    p {
-        font-size: 1rem;
-        text-align: left;
-        margin-bottom: 12px;
-    }
-
-    /* --- Grid layout --- */
-    .grid-container {
-        display: grid;
-        grid-gap: 18px;
-        grid-template-columns: 1fr 1fr 1fr;
-        padding: 25px;
-        max-width: 1200px;
-        margin: auto;
-    }
-
-    .grid-item {
-        background-color: #e9edc9;
-        padding: 20px;
-        border-radius: 14px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .grid-item:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-    }
-
-    /* Image box */
-    .main-img {
-        grid-column: 3;
-        grid-row: 1;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-    }
-
-    .main-img img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 12px;
-        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.25);
-    }
-    
-    .home-main-img {
-        grid-column: 1 / span 1;
-        grid-row: 2;
-         padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-    }
-
-    .home-main-img img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 12px;
-        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.25);
-    }
-
-    /* Section backgrounds */
-    .support-1 {
-        grid-column: 1 / span 2;
-        grid-row: 1;
-        background-color: #faedcd;
-    }
-
-    .support-2 {
-        grid-column: 2 / span 2;
-        grid-row: 2;
-        background-color: #faedcd;
-    }
-
-    .main-2 {
-        grid-column: 1 / span 4;
-        grid-row: 3;
-        background-color: #fefae0;
-        text-align: center;
-    }
-
-    /* NEW ELEMENTS */
-
-    /* Summary boxes */
-    .section-summary {
-        background: #fff7da;
-        border-left: 5px solid #d4a373;
-        padding: 12px 16px;
-        border-radius: 12px;
-        margin-bottom: 18px;
-        font-size: 0.95rem;
-    }
-
-    .section-summary ul {
-        padding-left: 20px;
-        margin: 0;
-    }
-
-    /* Collapsible card container */
-    details.card {
-        background: #fff7da;
-        border-radius: 12px;
-        padding: 14px 16px;
-        margin: 14px 0;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-    }
-
-    details.card summary {
-        font-weight: 600;
-        cursor: pointer;
-        font-size: 1.05rem;
-    }
-
-    details.card[open] {
-        box-shadow: 0 4px 14px rgba(0,0,0,0.12);
-    }
-
-    details.card p {
-        margin-top: 10px;
-    }
-
-</style>
-
 <body>
 
     <h2>The Sandman: Museum Exhibit Project</h2>
@@ -182,7 +23,7 @@
     <div class="grid-container">
 
         <!-- IMAGE -->
-        <div class="grid-item main-img">
+        <div class="grid-item grid-img">
             <img src="images/history1.png" alt="Paragraph 1 pic">
         </div>
 
@@ -244,7 +85,7 @@
             </details>
         </div>
         
-<div class="home-grid-item home-main-img"><img src="images/home1_pg.jpg"></div>
+<div class="home-grid-item grid-main-img"><img src="images/home1_pg.jpg"></div>
         <!-- GAME -->
         <div class="grid-item main-2">
             <h4><em>Play Our Game!</em></h4>
