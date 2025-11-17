@@ -8,87 +8,122 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/jmc4tfq.css">
 </head>
+
 <style>
+    /* --- TYPOGRAPHY IMPROVEMENTS --- */
+    body {
+        font-family: "proxima-nova", sans-serif;
+        line-height: 1.55;
+    }
+
+    h2, h3, h4 {
+        font-family: "minion-pro", serif;
+        margin-top: 0;
+    }
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 12px;
+    }
+
+    h4 {
+        font-size: 1.25rem;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    p {
+        font-size: 1rem;
+        text-align: left;
+        margin-bottom: 12px;
+    }
+
+    /* --- GRID LAYOUT, IMPROVED CONSISTENCY --- */
     .grid-container {
         display: grid;
-        grid-gap: 10px;
+        grid-gap: 18px;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto auto auto auto auto;
-        padding: 10px;
+        grid-template-rows: auto auto auto;
+        padding: 25px;
+        max-width: 1200px;
+        margin: auto;
     }
 
     .grid-item {
         background-color: #e9edc9;
-        padding: 10px;
-        border-radius: 12px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 14px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
+    /* Subtle hover polish (museum-feel) */
+    .grid-item:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    }
+
+    /* --- IMAGE BOX IMPROVED WITH CLEAN PRESENTATION --- */
     .main-img {
         grid-column: 1;
         grid-row: 1 / span 2;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #e9edc9;
-        /* optional for consistency */
-        border-radius: 12px;
+        padding: 0;
         overflow: hidden;
-        /* hides overflow if image is large */
     }
 
     .main-img img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        /* makes the image fill its block nicely */
         border-radius: 12px;
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.25);
     }
 
-    .main-1 {
-        grid-column: 2 / span 2;
-        grid-row: 3;
-        background-color: #fefae0;
-        padding: 5px 25px;
-    }
-
-    .main-2 {
-        flex: 1;
-        grid-column: 2 / span 2;
-        grid-row: 2;
-        background-color: #fefae0;
-        padding: 5px 25px;
-    }
-
+    /* --- CONTENT CARDS, UNIFIED --- */
     .support-1 {
-        grid-column: 2 / span 2;
-        grid-row: 2 / span 2;
         grid-column: 2;
         grid-row: 1;
         background-color: #faedcd;
-        padding: 5px 25px;
     }
 
     .support-2 {
-        grid-column: 2;
-        grid-row: 2;
         grid-column: 3;
         grid-row: 1;
         background-color: #faedcd;
-        padding: 5px 25px;
     }
 
-    .side-content {
-        grid-column: 1;
-        grid-row: 3 / span 3;
-        background-color: #e9edc9;
-        color: rgb(0, 0, 0);
-        padding: 5px 25px;
+    .main-2 {
+        grid-column: 2 / span 2;
+        grid-row: 2;
+        background-color: #fefae0;
+        text-align: center;
+    }
+
+    a {
+        font-weight: 600;
+        text-decoration: underline;
+    }
+
+    em {
+        font-style: italic;
     }
 </style>
 
 <body>
-    <h2 style="text-align: center;">The Sandman: Museum Exibit Project</h2>
+
+    <h2 style="text-align: center;">The Sandman: Museum Exhibit Project</h2>
+
     <ul class="navbar">
         <li><a href="literary_analysis.html">Literary Analysis</a></li>
         <li><a href="historical_analysis.html">Historical Analysis</a></li>
@@ -96,40 +131,58 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="sources.html">Sources</a></li>
         <li><a href="game.html">GAME?</a></li>
-
     </ul>
-
 
     <div class="grid-container">
 
-        <div class="grid-item main-img"> <img src="images/hoffmann.jpg"></div>
+        <!-- Portrait -->
+        <div class="grid-item main-img">
+            <img src="images/hoffmann.jpg" alt="Portrait of E.T.A. Hoffmann">
+        </div>
 
+        <!-- Biography Section 1 -->
         <div class="grid-item support-1">
             <h3>Early Life</h3>
-            <p>E.T.A. Hoffman was a promising poet, a jurist, and musician born during the German Romantic Era. His
-                childhood was instable, as his parents were divorced, with one being an alcoholic, and the other being
-                often described as a hysterical and obsessively orderly woman, influencing the way he was raised and
-                shaping his writing style. Starting from his early teenage years, Hoffman began painting and creating
-                art compositions, and when he worked in the Prussian provinces, many said he began to become dissolute.
+            <p>
+                E.T.A. Hoffmann was a promising poet, jurist, and musician born during the German Romantic Era.
+                His childhood was unstable: his parents divorced, his father struggled with alcoholism, and his mother
+                was known for her strict, obsessive orderliness. These conditions shaped Hoffmann’s creative
+                temperament and the tone of his later writing.
+            </p>
+            <p>
+                From a young age, he immersed himself in painting, composition, and storytelling. During his work in the
+                Prussian provinces, those around him noted that he began drifting into a more bohemian and dissolute
+                lifestyle, deepening the imaginative complexity of his later tales.
             </p>
         </div>
+
+        <!-- Biography Section 2 -->
         <div class="grid-item support-2">
-            <h3>The Effect of his Life on his Work</h3>
-            <p>Many of his tales feature main characters who are demented, either permanently or temporarily, under the
-                impact of events that their minds cannot handle. His stories often showcase the way everyday life and
-                fantasy coexisted and often merged, becoming one. Throughout his life, he suffered from the misery and
-                constraints of Prussian reality, which he portrayed in his novels. He believed that only artists and
-                children could escape the constraints of everyday life thanks to their imagination and befriended them
-                at every opportunity, spontaneously come up with stories and fairy tales for them that were never
-                written down. Eventually, he was exiled and became isolated from society, where he began drawing,
-                composing, and writing in his diary. </p>
+            <h3>The Effect of His Life on His Work</h3>
+            <p>
+                Hoffmann’s stories often depict individuals overwhelmed by forces beyond their control—psychological or
+                supernatural. He explored the thin boundary between reality and fantasy, showing how the two worlds
+                collide and merge.
+            </p>
+            <p>
+                His personal dissatisfaction with Prussian life, along with his artistic sensibilities, fueled stories
+                where imagination offered an escape from rigid social constraints. Children and artists, in his view,
+                were uniquely able to perceive wonder in the world.
+            </p>
+            <p>
+                Late in life, exile and isolation led him to produce deeply introspective works while he continued
+                painting, composing, and writing in his diaries.
+            </p>
         </div>
+
+        <!-- Game Section -->
         <div class="grid-item main-2">
             <h4><em>Play Our Game!</em></h4>
-            <p>IDK WHATEVER OUR INTERACTIVE ELEMENT IS HERE</p>
-            <p>Play it <a href="GAME?.html">here</a>.</p>
+            <p>Experience a small interactive activity inspired by Hoffmann’s themes.</p>
+            <p>Play it <a href="game.html">here</a>.</p>
         </div>
-    </div>
-</body>
 
+    </div>
+
+</body>
 </html>
