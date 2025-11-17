@@ -4,130 +4,235 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biography</title>
+    <title>Historical Analysis</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/jmc4tfq.css">
 </head>
+
 <style>
+    body {
+        font-family: "proxima-nova", sans-serif;
+        line-height: 1.55;
+    }
+
+    h2, h3, h4 {
+        font-family: "minion-pro", serif;
+        margin-top: 0;
+    }
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 18px;
+    }
+
+    h4 {
+        font-size: 1.15rem;
+        margin: 12px 0 6px;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 1rem;
+        text-align: left;
+        margin-bottom: 12px;
+    }
+
+    /* --- Grid layout --- */
     .grid-container {
         display: grid;
-        grid-gap: 10px;
+        grid-gap: 18px;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto auto auto auto auto;
-        padding: 10px;
+        padding: 25px;
+        max-width: 1200px;
+        margin: auto;
     }
 
     .grid-item {
         background-color: #e9edc9;
-        padding: 10px;
-        border-radius: 12px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 14px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
+    .grid-item:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Image box */
     .main-img {
-        grid-column: 1;
-        grid-row: 1 / span 2;
+        grid-column: 3;
+        grid-row: 1;
+        padding: 0;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #e9edc9;
-        /* optional for consistency */
-        border-radius: 12px;
         overflow: hidden;
-        /* hides overflow if image is large */
     }
 
     .main-img img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        /* makes the image fill its block nicely */
         border-radius: 12px;
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.25);
     }
 
-    .main-1 {
-        grid-column: 2 / span 2;
-        grid-row: 3;
-        background-color: #fefae0;
-        padding: 5px 25px;
-    }
-
-    .main-2 {
-        flex:1;
-        background-color: #fefae0;
-        padding: 5px 25px;
-    }
-
+    /* Section backgrounds */
     .support-1 {
-        grid-column: 2 / span 2;
-        grid-row: 2 / span 2;
+        grid-column: 1 / span 2;
         background-color: #faedcd;
-        padding: 5px 25px;
     }
 
     .support-2 {
-        grid-column: 2;
-        grid-row: 2;
+        grid-column: 2 / span 2;
         background-color: #faedcd;
-        padding: 5px 25px;
     }
 
-    .side-content {
+    .main-2 {
         grid-column: 1;
-        grid-row: 3 / span 3;
-        background-color: #e9edc9;
-        color: rgb(0, 0, 0);
-        padding: 5px 25px;
+        grid-row: 2;
+        background-color: #fefae0;
+        text-align: center;
     }
+
+    /* NEW ELEMENTS */
+
+    /* Summary boxes */
+    .section-summary {
+        background: #fff7da;
+        border-left: 5px solid #d4a373;
+        padding: 12px 16px;
+        border-radius: 12px;
+        margin-bottom: 18px;
+        font-size: 0.95rem;
+    }
+
+    .section-summary ul {
+        padding-left: 20px;
+        margin: 0;
+    }
+
+    /* Collapsible card container */
+    details.card {
+        background: #fff7da;
+        border-radius: 12px;
+        padding: 14px 16px;
+        margin: 14px 0;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    details.card summary {
+        font-weight: 600;
+        cursor: pointer;
+        font-size: 1.05rem;
+    }
+
+    details.card[open] {
+        box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+    }
+
+    details.card p {
+        margin-top: 10px;
+    }
+
 </style>
 
 <body>
-    <h2 style="text-align: center;">The Sandman: Museum Exibit Project</h2>
+
+    <h2>The Sandman: Museum Exhibit Project</h2>
+
     <ul class="navbar">
-        <li><a href="literary_analysis.html" class="active" >Literary Analysis</a></li>
-        <li><a href="historical_analysis.html">Historical Analysis</a></li>
+        <li><a href="literary_analysis.html">Literary Analysis</a></li>
+        <li><a href="historical_analysis.html" class="active">Historical Analysis</a></li>
         <li><a href="biography.html">Biography</a></li>
         <li><a href="index.html">Home</a></li>
         <li><a href="sources.html">Sources</a></li>
         <li><a href="game.html">GAME?</a></li>
-
     </ul>
-
 
     <div class="grid-container">
 
-        <div class="grid-item main-img"> <img src="images/hoffmann.jpg"></div>
+        <!-- IMAGE -->
+        <div class="grid-item main-img">
+            <img src="images/history1.png" alt="Paragraph 1 pic">
+        </div>
 
-        <h3>Our Book:</h3>
-        <p>Our book is the Sandman by E.T. Hoffman</p>
-        <p>"The Sandman" is a psychological horror story that explores themes of fear, reality versus fantasy,
-            and
-            the impact of childhood trauma through the experiences of Nathanael, who becomes obsessed with the
-            figure of the Sandman.</p>
+        <!-- SECTION 1 -->
+        <div class="grid-item support-1">
+            <h3>How the book was influenced by the time period:</h3>
+
+            <div class="section-summary">
+                <strong>Quick Summary:</strong>
+                <ul>
+                    <li>Romanticism reacted against Enlightenment ideas.</li>
+                    <li>Technological change caused fear and distrust.</li>
+                    <li>Hoffmann reflected these tensions through characters and themes.</li>
+                </ul>
+            </div>
+
+            <h4>Romanticism vs Enlightenment</h4>
+            <details class="card">
+                <summary>Read more</summary>
+                <p>The Sandman was written in 1815 during the peak of the German Romantic era, which stretched from 1800 - 1830. The Romantic era was a reaction against the Enlightenment's constant scientific thinking and rationalism. The enlightenment was a major turning point in history when ideas like rational thinking, natural rights, and human freedom were prominent. However, by the late 18th and 19th centuries many influential thinkers began questioning whether reason alone could guide societies. They "witnessed instead terror and revolution, corruption, gross commercial excess and the continued growth of violent colonialism" (Institute 23). These events led to rejection and the belief that scientific or technological progress would automatically improve human life. In retaliation, Romanticism focused on an appreciation of nature, the mysterious, and an idealization of the past. This transition from Enlightenment to Romanticism is showcased through the contrast and tension between Clara's rational explanations for the Sandman, combined with Nathaniel's inner torture and disparity.</p>
+            </details>
+
+            <h4>Fear of Technology</h4>
+            <details class="card">
+                <summary>Read more</summary>
+                <p>Also during this time, the introduction of technological and scientific advancements caused widespread disdain and fear from Romantic thinkers. This stemmed from several reasons, such as the spread of highly capable technology, which cause "widespread substitution of machines for labor, which in turn could lead to technological unemployment" and overall displeasure (Mokyr 15). This substitution caused fear of dehumanization through work, where individuality and creativity would be replaced by efficiency. Moreover, people feared that this mechanical-centered life would cut off emotional relationships and lead to a loss of autonomy, alienating closeness with others to prioritize uniformity. This ideology likely influenced Hoffmann's thinking as well, as he paints automations and new technologies as the antagonist in The Sandman.</p>
+            </details>
+
+            <h4>Rise of the Uncanny</h4>
+            <details class="card">
+                <summary>Read more</summary>
+                <p>This era saw Romantic writers reacting against Enlightenment's analyses, emphasizing emotion over reason, the uncanny, and inner experience (Silva). One article describes E.T.A. Hoffmann as being a main contributor to the Romantic interests in the weird and horrible (Britannica).</p>
+            </details>
+        </div>
+
+        <!-- SECTION 2 -->
+        <div class="grid-item support-2">
+            <h3>How The Sandman influenced society at that time:</h3>
+
+            <div class="section-summary">
+                <strong>Quick Summary:</strong>
+                <ul>
+                    <li>Hoffmann shaped major Gothic and psychological writers.</li>
+                    <li>His themes of madness inspired interpretations of mental illness.</li>
+                    <li>The Sandman influenced both literature and early psychoanalysis.</li>
+                </ul>
+            </div>
+
+            <h4>Influence on Literature</h4>
+            <details class="card">
+                <summary>Read more</summary>
+                <p>E. T. A. Hoffmann, described as “the godfather of modern horror, weird fiction, and fantasy,” had an “inestimable influence” on writers like Poe, Dickens, Hawthorne, de Maupassant, Stevenson, and James and works such as Frankenstein, Dr Jekyll and Mr Hyde, Dracula, and The Turn of the Screw. The rise of popularity of the Sandman caused writers in the dark Romantic period explored the theme of schizophrenia as splitting insanity, inspired by Hoffman's recurring motif of protagonists whose failing grip on reality leads to madness or death shaped how later writers used the uncanny to explore the night side of modernity. This theme was especially popular during this time period because it bends the boundary between logic and madness, exploring the border between ideas of Romanticism and Enlightenment, represented by Nathaniel and Clara.</p>
+            </details>
+
+            <h4>Influence on Psychology</h4>
+            <details class="card">
+                <summary>Read more</summary>
+                <p>The Sandman also influenced early psychoanalysts and psychiatrists, who read his tales as windows into the mind. In 1919, Sigmund Freud’s used the sandman to illustrate ideas in his essay The Uncanny. Otto Rank, Freud’s student, treated Hoffmann’s figures as mentally ill and concluded that Hoffmann had “undoubtedly strong personal drives” behind such portrayals. Psychiatrist Panizza went a step further by adopting Hoffmann’s narrative technique itself, reworking his themes and motifs with up-to-date medical knowledge, and in Der Korsetten-Fritz he effectively continues The Sandman, shifting from romantic psychiatry’s view of insanity as a “clouding of perception with a confusion of ideas” to the modern notion of schizophrenia as a “splitting insanity.” This demonstrates how the Sandman gave later Dark Romantic intellectuals a model for psychological and symbolic Gothic fiction.</p>
+            </details>
+        </div>
+
+        <!-- GAME -->
+        <div class="grid-item main-2">
+            <h4><em>Play Our Game!</em></h4>
+            <p>Experience a small interactive activity inspired by Hoffmann’s themes.</p>
+            <p>Play it <a href="game.html">here</a>.</p>
+        </div>
+
     </div>
-    <div class="grid-item support-1">
-        <h3>Historical Analysis</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-            deserunt mollit anim id est laborum.</p>
-        <p>Find more on our <a href="historical_analysis.html">Historical Analysis </a> page!</p>
-    </div>
-    <div class="grid-item support-2">
-        <h3>Literary Analysis</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-            deserunt mollit anim id est laborum.</p>
-        <p>Learn more our Literary Analysis <a href="literary_analysis.html">here</a>.</p>
-    </div>
-    <div class="grid-item main-2">
-        <h4><em>Play Our Game!</em></h4>
-        <p>IDK WHATEVER OUR INTERACTIVE ELEMENT IS HERE</p>
-        <p>Play it <a href="GAME?.html">here</a>.</p>
-    </div>
+
 </body>
-
 </html>
