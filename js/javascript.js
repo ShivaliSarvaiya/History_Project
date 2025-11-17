@@ -4,10 +4,10 @@ const choicesElement = document.getElementById("choices");
 //story nodes and structures (ads application !!)
 const storyNodes = {
   start: {
-    text: "You walk into a clearing with lots of things in it and you are nathaniel",
+    text: "You sit in your room at the university. Before you lies a letter you're writing to Clara, and Coppola's telescope.",
     choices: [
-      { text: "Take the left path", next: "leftPath" },
-      { text: "Take the right path", next: "rightPath" }
+      { text: "continue writing your letter", next: "leftPath" },
+      { text: "pick up the telescope", next: "rightPath" }
     ]
   },
   leftPath: {
