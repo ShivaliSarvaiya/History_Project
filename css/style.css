@@ -32,7 +32,7 @@ body {
 .navbar a.active {
     border: 2px solid #D76497;
     border-radius: 15px;
-    font-weight: bold;
+    font-weight: normal;
     background-color: #fff;
     color: #D76497;
 }
@@ -83,7 +83,7 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #f8ffa8;
+    background-color: #684b5b;
     color: black;
     text-align: center;
     font-weight: bold;

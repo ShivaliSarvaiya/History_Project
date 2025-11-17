@@ -1,15 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sources</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/jmc4tfq.css">
-</head>
 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: azure;
+            margin: 0;
+            padding: 40px 20px;
+            color: #333;
+            text-align: center;
+        }
+        h1, h2 {
+            color: #222;
+        }
+        section {
+            margin-bottom: 50px;
+        }
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .citations {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            text-align: left;
+            max-width: 800px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .citations p {
+            margin-bottom: 15px;
+        }
+        a {
+            color: #1a0dab;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
 <body>
+    
     <h2 style="text-align: center;">The Sandman: Museum Exibit Project</h2>
     <ul class="navbar">
         <li><a href="literary_analysis.html">Literary Analysis</a></li>
@@ -19,6 +74,41 @@
         <li><a href="game.html">GAME?</a></li>
 
     </ul>
-</body>
 
+
+    <!-- Literary Analysis Section -->
+    <section>
+        <h3>Literary Analysis Sources</h3>
+        <div class="buttons">
+            <button onclick="window.open('https://example.com/literary1', '_blank')">Literary Source 1</button>
+            <button onclick="window.open('https://example.com/literary2', '_blank')">Literary Source 2</button>
+        </div>
+    </section>
+
+    <!-- Historical Context Section -->
+    <section>
+        <h3>Historical Context Sources</h3>
+        <div class="buttons">
+            <button onclick="window.open('https://www.intellectualhistory.net/end-of-enlightenment', '_blank')">End of Enlightenment</button>
+            <button onclick="window.open('https://www.britannica.com/art/Romanticism', '_blank')">Romanticism Overview</button>
+            <button onclick="window.open('https://etahoffmann.staatsbibliothek-berlin.de/erforschen/rezeption/rezeption-laender/deutschland/', '_blank')">Hoffmann Reception</button>
+            <button onclick="window.open('https://www.oldstyletales.com/single-post/2019/01/08/e-t-a-hoffmanns-uncanny-reality-bending-horror-stories-oldstyle-tales-macabre-masters#:~:text=He%20was%20the%20godfather%20of%20modern%20horror%2C,filmmakers%20from%20Tim%20Burton%20and%20Christopher%20Nol', '_blank')">Oldstyle Tales on Hoffmann</button>
+            <button onclick="window.open('https://www.aeaweb.org/articles?id=10.1257/aer.102.3.1092', '_blank')">Technological Anxiety</button>
+            <button onclick="window.open('https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1234567/', '_blank')">Moral Insanity & Psychiatry</button>
+        </div>
+    </section>
+
+    <!-- MLA Citations Section -->
+    <section>
+        <h3>MLA Citations</h3>
+        <div class="citations">
+            <p>American Economic Association. “The History of Technological Anxiety and the Future of Economic Growth: Is This Time Different?” Shivali.</p>
+            <p>“End of Enlightenment.” Intellectual History, <a href="https://www.intellectualhistory.net/end-of-enlightenment" target="_blank">https://www.intellectualhistory.net/end-of-enlightenment</a>.</p>
+            <p>“Romanticism.” Britannica, <a href="https://www.britannica.com/art/Romanticism" target="_blank">https://www.britannica.com/art/Romanticism</a>.</p>
+            <p>“E.T.A. Hoffmann Reception in Germany.” Staatsbibliothek Berlin, <a href="https://etahoffmann.staatsbibliothek-berlin.de/erforschen/rezeption/rezeption-laender/deutschland/" target="_blank">https://etahoffmann.staatsbibliothek-berlin.de/erforschen/rezeption/rezeption-laender/deutschland/</a>.</p>
+            <p>Oldstyle Tales. “E.T.A. Hoffmann’s Uncanny Reality-Bending Horror Stories.” <a href="https://www.oldstyletales.com/single-post/2019/01/08/e-t-a-hoffmanns-uncanny-reality-bending-horror-stories-oldstyle-tales-macabre-masters#:~:text=He%20was%20the%20godfather%20of%20modern%20horror%2C,filmmakers%20from%20Tim%20Burton%20and%20Christopher%20Nol" target="_blank">Link</a>.</p>
+            <p>“Moral Insanity and Psychological Disorder: The Hybrid Roots of Psychiatry.” PMC, Shivali, <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1234567/" target="_blank">Link</a>.</p>
+        </div>
+    </section>
+</body>
 </html>

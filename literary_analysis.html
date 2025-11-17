@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Historical Analysis</title>
+    <title>Literary Analysis</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/jmc4tfq.css">
 </head>
@@ -86,21 +86,41 @@
         border-radius: 12px;
         box-shadow: 0 3px 15px rgba(0, 0, 0, 0.25);
     }
+    
+    .home-main-img {
+        grid-column: 1 / span 1;
+        grid-row: 2;
+         padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .home-main-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.25);
+    }
 
     /* Section backgrounds */
     .support-1 {
         grid-column: 1 / span 2;
+        grid-row: 1;
         background-color: #faedcd;
     }
 
     .support-2 {
         grid-column: 2 / span 2;
+        grid-row: 2;
         background-color: #faedcd;
     }
 
     .main-2 {
-        grid-column: 1;
-        grid-row: 2;
+        grid-column: 1 / span 4;
+        grid-row: 3;
         background-color: #fefae0;
         text-align: center;
     }
@@ -152,8 +172,7 @@
     <h2>The Sandman: Museum Exhibit Project</h2>
 
     <ul class="navbar">
-        <li><a href="literary_analysis.html">Literary Analysis</a></li>
-        <li><a href="historical_analysis.html" class="active">Historical Analysis</a></li>
+        <li><a href="literary_analysis.html" class="active">Literary Analysis</a></li>
         <li><a href="biography.html">Biography</a></li>
         <li><a href="index.html">Home</a></li>
         <li><a href="sources.html">Sources</a></li>
@@ -224,14 +243,17 @@
                 <p>The Sandman also influenced early psychoanalysts and psychiatrists, who read his tales as windows into the mind. In 1919, Sigmund Freud’s used the sandman to illustrate ideas in his essay The Uncanny. Otto Rank, Freud’s student, treated Hoffmann’s figures as mentally ill and concluded that Hoffmann had “undoubtedly strong personal drives” behind such portrayals. Psychiatrist Panizza went a step further by adopting Hoffmann’s narrative technique itself, reworking his themes and motifs with up-to-date medical knowledge, and in Der Korsetten-Fritz he effectively continues The Sandman, shifting from romantic psychiatry’s view of insanity as a “clouding of perception with a confusion of ideas” to the modern notion of schizophrenia as a “splitting insanity.” This demonstrates how the Sandman gave later Dark Romantic intellectuals a model for psychological and symbolic Gothic fiction.</p>
             </details>
         </div>
-
+        
+<div class="home-grid-item home-main-img"><img src="images/home1_pg.jpg"></div>
         <!-- GAME -->
         <div class="grid-item main-2">
             <h4><em>Play Our Game!</em></h4>
             <p>Experience a small interactive activity inspired by Hoffmann’s themes.</p>
             <p>Play it <a href="game.html">here</a>.</p>
         </div>
-
+<div class="footer">
+        <p>page created by Shivali Sarvaiya</p>
+    </div>
     </div>
 
 </body>
