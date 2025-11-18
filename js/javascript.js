@@ -20,12 +20,12 @@ const storyNodes = {
   pickUp: {
     text: "You try to finish writing your letter, but one quick glance through the window convinces you that Olympia will still be there. You pick up your new telescope and aim it out the window. She sits still, silent, perfect. Later, at a play, her father, a professor of yours, officially introduces you two. You: ",
     choices: [
-      { text: "Speak only to Olympia", next: "speakOnly" },
-      { text: "Compare Olympia and Clara", next: "Clara" }
+      { text: "Ultimately decide Olympia is better", next: "speakOnly" },
+      { text: "Abandon Olympia and return to Clara", next: "return" }
     ]
   },
   Clara: {
-    text: "You rest peacefully and feel safe. You survived your adventure!",
+    text: "Olympia's agreeableness and docileness create a stark contrast to the way Clara constantly tried to argue back and provide reasonable explanations for your fears of the Sandman. Her opinions feel like a flaw, and you become distant.",
     choices: [{ text: "Play again", next: "start" }]
   },
   SpeakOnly: {
@@ -35,11 +35,11 @@ const storyNodes = {
       { text: "Keep walking", next: "Keep walking" }
     ]
   },
-  monster: {
-    text: "A wild creature appears! You try to run, but it’s too fast!",
+  return: {
+    text: "You reconcile with Clara back at your hometown. Together you go to a small plaza and stand on one of the balconies. You feel something in your pocket.",
     choices: [
-      { text: "Fight back", next: "fight" },
-      { text: "Surrender", next: "caught" }
+      { text: "Pull it out", next: "pullOut" },
+      { text: "Ignore it", next: "ignore" }
     ]
   },
   fight: {
