@@ -6,19 +6,19 @@ const storyNodes = {
   start: {
     text: "You sit in your room at the university. Before you lies a letter you're writing to Clara, and Coppola's telescope.",
     choices: [
-      { text: "continue writing your letter", next: "leftPath" },
-      { text: "pick up the telescope", next: "rightPath" }
+      { text: "continue writing your letter", next: "continueWriting" },
+      { text: "pick up the telescope", next: "pickUp" }
     ]
   },
-  leftPath: {
-    text: "You walk into a peaceful clearing filled with sunlight and flowers.",
+  continueWriting: {
+    text: "You continue, but your mind is foggy and your writing shaky. Your mind keeps drifting to the machine.",
     choices: [
       { text: "Sit and rest", next: "rest" },
       { text: "Keep exploring", next: "explore" }
     ]
   },
-  rightPath: {
-    text: "The forest grows darker. You hear strange noises around you.",
+  pickUp: {
+    text: "You sit down to finish writing your letter, but one quick glance through the window convinces you that Olympia will still be there. You pick up your new telescope and aim it out the window.",
     choices: [
       { text: "Run back!", next: "start" },
       { text: "Keep going", next: "monster" }
