@@ -42,12 +42,15 @@ const storyNodes = {
       { text: "Ignore it", next: "ignore" }
     ]
   },
-  fight: {
-    text: "You bravely fight the monster and escape! You’re a hero!",
-    choices: [{ text: "Play again", next: "start" }]
+  keptWriting: {
+    text: "You finish your letter, and a couple weeks later you return back to your hometown and reconcile with Clara. As you stand with her over a balcony, you feel something in your pocket.",
+    choices: [
+      { text: "Pull it out", next: "pullOut" },
+      { text: "Ignore it", next: "ignore" }
+    ]
   },
-  caught: {
-    text: "The monster captures you... Game Over.",
+  pullOut: {
+    text: "It's the telescope that you had bought all those weeks ago! You aim it out the balcony, but you catch Clara in it instead.",
     choices: [{ text: "Try again", next: "start" }]
   },
   happyEnding: {
