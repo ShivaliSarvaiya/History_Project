@@ -482,9 +482,13 @@ details.card p {
 
 .card-content {
     max-height: 0;
+    opacity: 0;
     overflow: hidden;
-    transition: max-height 0.45s ease;
+    transition:
+        max-height 0.45s ease,
+        opacity 0.45s ease;
 }
+
 
 .footer {
     position: fixed;
