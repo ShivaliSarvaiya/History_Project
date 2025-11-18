@@ -6,33 +6,33 @@ const storyNodes = {
   start: {
     text: "You sit in your room at the university. Before you lies a letter you're writing to Clara, and Coppola's telescope.",
     choices: [
-      { text: "continue writing your letter", next: "continueWriting" },
-      { text: "pick up the telescope", next: "pickUp" }
+      { text: "Continue writing your letter", next: "continueWriting" },
+      { text: "Pick up the telescope", next: "pickUp" }
     ]
   },
   continueWriting: {
-    text: "You continue, but your mind is foggy and your writing shaky. Your mind keeps drifting to the machine.",
+    text: "You continue, but your mind is foggy and your writing shaky. Your mind keeps drifting to the telescope.",
     choices: [
-      { text: "Sit and rest", next: "rest" },
-      { text: "Keep exploring", next: "explore" }
+      { text: "Pick up the telescope", next: "pickUp" },
+      { text: "Adamantly keep writing", next: "keptWriting" }
     ]
   },
   pickUp: {
-    text: "You sit down to finish writing your letter, but one quick glance through the window convinces you that Olympia will still be there. You pick up your new telescope and aim it out the window.",
+    text: "You try to finish writing your letter, but one quick glance through the window convinces you that Olympia will still be there. You pick up your new telescope and aim it out the window. She sits still, silent, perfect. Later, at a play, her father, a professor of yours, officially introduces you two. You: ",
     choices: [
-      { text: "Run back!", next: "start" },
-      { text: "Keep going", next: "monster" }
+      { text: "Speak only to Olympia", next: "speakOnly" },
+      { text: "Compare Olympia and Clara", next: "Clara" }
     ]
   },
-  rest: {
+  Clara: {
     text: "You rest peacefully and feel safe. You survived your adventure!",
     choices: [{ text: "Play again", next: "start" }]
   },
-  explore: {
-    text: "You discover a hidden village. The people welcome you warmly!",
+  SpeakOnly: {
+    text: "Her predictable responses soothe you, and you become wholly infatuated with her. All memories of Clara, your best friend, your mother, all vanish from memory and all that exists is her. You become set on marrying her. The night ends, however, and you head back alone to your room. Suddenly, you hear a commotion in a small room to your left.",
     choices: [
-      { text: "Stay with them", next: "happyEnding" },
-      { text: "Go back to the forest", next: "start" }
+      { text: "Investigate the commotion", next: "Investigate" },
+      { text: "Keep walking", next: "Keep walking" }
     ]
   },
   monster: {
