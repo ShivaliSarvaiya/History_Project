@@ -31,8 +31,8 @@ const storyNodes = {
   SpeakOnly: {
     text: "Her predictable responses soothe you, and you become wholly infatuated with her. All memories of Clara, your best friend, your mother, all vanish from memory and all that exists is her. You become set on marrying her. The night ends, however, and you head back alone to your room. Suddenly, you hear a commotion in a small room to your left.",
     choices: [
-      { text: "Investigate the commotion", next: "Investigate" },
-      { text: "Keep walking", next: "Keep walking" }
+      { text: "Investigate the commotion", next: "investigate" },
+      { text: "Keep walking", next: "keepWalking" }
     ]
   },
   return: {
@@ -50,12 +50,48 @@ const storyNodes = {
     ]
   },
   pullOut: {
-    text: "It's the telescope that you had bought all those weeks ago! You aim it out the balcony, but you catch Clara in it instead.",
-    choices: [{ text: "Try again", next: "start" }]
+    text: "It's the telescope that you had bought all those weeks ago. You aim it out the balcony, but you catch Clara in it instead!",
+    choices: [{ text: "continue", next: "continue" }]
   },
-  happyEnding: {
-    text: "You live happily ever after with the villagers. The End!",
+  continue: {
+    text: "A spasm shudders through you and you eyes soon begin to roll. The telescope shudders in your hand and grows red-hot before falling to the floor. Fire seems to flash and glow, and you leap high into the air, and, laughing hideously, sieze Clara and try to throw her off the tower. Lothario grabs her, and in your madness you throw yourself over the balcony.",
     choices: [{ text: "Restart", next: "start" }]
+  },
+
+  investigate: {
+    text: "You peer into the room where the noises are comming from, and you see Coppelius and your professor, Olympia's dad, fighting over Olympia.",
+    choices: [
+      { text: "Intervene", next: "intervene" },
+      { text: "Just watch", next: "justWatch" }
+    ]
+  },
+
+  intervene: {
+    text: "You jump into the fray, shouting while trying to save Olympia, but in a flash and a twist, she comes apart in an explosion of wires. Two glass eyes tumble to the ground and you realize all along that she was never real.",
+    choices: [
+      { text: "Continue", next: "continue1" }
+    ]
+  },
+
+  justWatch: {
+    text: "You freeze in horror as, in one swift motion, Coppelius lunges for Olympia's face and tears out the eyes. They tinkle to the floor, two glass orbs, and you realize with a shock that she was indeed nothing more than a doll. An automation.",
+    choices: [
+      { text: "Continue", next: "continue2" }
+    ]
+  },
+
+  continue1: {
+    text: "Overcome by rage at being fooled by a doll, you throw a fit of madness and vow to never trust anyone again through fear of them too, being nothing more than cold metal. You isolate yourself from everyone through your paranoia, and die alone.",
+    choices: [
+      { text: "Restart", next: "start" }
+    ]
+  },
+
+  continue2: {
+    text: "Your reality shatters as the person who you thought was your true love ended up to be nothing more than an unfeeling machine. You live the rest of your life paranoid of making true relationships out of fear that they too, will be machines. You die in fear, alone and broken.",
+    choices: [
+      { text: "Restart", next: "start" }
+    ]
   }
 };
 
