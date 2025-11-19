@@ -95,16 +95,28 @@ h2 {
 }
 
 h3 {
+    padding: 20px;
     font-size: 1.4rem;
     text-align: center;
     font-weight: 700;
     margin-bottom: 18px;
+    font-family: Georgia, serif;
 }
 
 h4 {
     font-size: 1.15rem;
     margin: 12px 0 6px;
     font-weight: 600;
+}
+
+h5 {
+    background-color: #E7EAE5;
+    padding: 20px;
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 18px;
+    font-family: Georgia, serif;
 }
 
 p {
@@ -320,7 +332,7 @@ em {
 }
 
 .grid-item {
-    background-color: #e9edc9;
+    background-color: #DED1B8;
     padding: 20px;
     border-radius: 14px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
@@ -345,7 +357,7 @@ section {
 }
 
 button {
-    background-color: #3C4E4A;
+    background-color: #7C9B98;
     color: white;
     border: none;
     padding: 12px 25px;
@@ -356,11 +368,11 @@ button {
 }
 
 button:hover {
-    background-color: #7c9b98;
+    background-color: #3C4E4A;
 }
 
 .citations {
-    background-color: #fff;
+    background-color: #E7EAE5;
     padding: 20px;
     border-radius: 10px;
     display: inline-block;
