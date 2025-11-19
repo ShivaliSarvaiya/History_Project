@@ -25,7 +25,7 @@ const storyNodes = {
     ]
   },
   Clara: {
-    text: "Olympia's agreeableness and docileness create a stark contrast to the way Clara constantly tried to argue back and provide reasonable explanations for your fears of the Sandman. Her opinions feel like a flaw, and you become distant.",
+    text: "Olympia's agreeableness and docility create a stark contrast to the way Clara constantly tried to argue back and provide reasonable explanations for your fears of the Sandman. Her opinions feel like a flaw, and you become distant.",
     choices: [{ text: "Play again", next: "start" }]
   },
   SpeakOnly: {
@@ -35,6 +35,16 @@ const storyNodes = {
       { text: "Keep walking", next: "keepWalking" }
     ]
   },
+
+
+  keepWalking: {
+    text: "You hurry down the hall, not bothering to look back. But the next day, Olympia isn't there. Nor is she the day after. Reality cracks a little around you as you ask Coppola where she went. He laughs cruelly and responds that she was never real, and from his pocket he produces two glass eyes. A shudder rolls through you.",
+    choices: [
+      { text: "Continue", next: "continue3" }
+    ]
+  },
+
+
   return: {
     text: "You reconcile with Clara back at your hometown. Together you go to a small plaza and stand on one of the balconies. You feel something in your pocket.",
     choices: [
@@ -54,12 +64,12 @@ const storyNodes = {
     choices: [{ text: "continue", next: "continue" }]
   },
   continue: {
-    text: "A spasm shudders through you and you eyes soon begin to roll. The telescope shudders in your hand and grows red-hot before falling to the floor. Fire seems to flash and glow, and you leap high into the air, and, laughing hideously, sieze Clara and try to throw her off the tower. Lothario grabs her, and in your madness you throw yourself over the balcony.",
+    text: "A spasm shudders through you and your eyes soon begin to roll. The telescope shudders in your hand and grows red-hot before falling to the floor. Fire seems to flash and glow, and you leap high into the air, and, laughing hideously, seize Clara and try to throw her off the tower. Lothario grabs her, and in your madness you throw yourself over the balcony.",
     choices: [{ text: "Restart", next: "start" }]
   },
 
   investigate: {
-    text: "You peer into the room where the noises are comming from, and you see Coppelius and your professor, Olympia's dad, fighting over Olympia.",
+    text: "You peer into the room where the noises are coming from, and you see Coppelius and your professor, Olympia's dad, fighting over Olympia.",
     choices: [
       { text: "Intervene", next: "intervene" },
       { text: "Just watch", next: "justWatch" }
@@ -74,7 +84,7 @@ const storyNodes = {
   },
 
   justWatch: {
-    text: "You freeze in horror as, in one swift motion, Coppelius lunges for Olympia's face and tears out the eyes. They tinkle to the floor, two glass orbs, and you realize with a shock that she was indeed nothing more than a doll. An automation.",
+    text: "You freeze in horror as, in one swift motion, Coppelius lunges for Olympia's face and tears out the eyes. They tinkle to the floor, two glass orbs, and you realize with a shock that she was indeed nothing more than a doll. An automaton.",
     choices: [
       { text: "Continue", next: "continue2" }
     ]
@@ -88,7 +98,21 @@ const storyNodes = {
   },
 
   continue2: {
-    text: "Your reality shatters as the person who you thought was your true love ended up to be nothing more than an unfeeling machine. You live the rest of your life paranoid of making true relationships out of fear that they too, will be machines. You die in fear, alone and broken.",
+    text: "Your reality shatters as the person who you thought was your true love ended up being nothing more than an unfeeling machine. You live the rest of your life paranoid of making true relationships out of fear that they too, will be machines. You die in fear, alone and broken.",
+    choices: [
+      { text: "Restart", next: "start" }
+    ]
+  },
+
+  continue3: {
+    text: "Realizing you've been tricked, red hot anger boils through you and you return home with a feverish sweat. As you lay eyes on Clara, you realize that she too, must be a machine as well. You attempt to kill her in a rage of madness, but Lothario rescues her. Coppelius watches from below as you throw yourself over the balcony.",
+    choices: [
+      { text: "Restart", next: "start" }
+    ]
+  },
+
+  ignore: {
+    text: "Shoving the object deeper into your pocket, you gaze out into the distance and banish all thoughts of Coppola, the telescope, and Olympia from your mind. You look blankly into the distance and the story ends.",
     choices: [
       { text: "Restart", next: "start" }
     ]
