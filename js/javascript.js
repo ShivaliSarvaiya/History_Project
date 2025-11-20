@@ -28,7 +28,7 @@ const storyNodes = {
     text: "Olympia's agreeableness and docility create a stark contrast to the way Clara constantly tried to argue back and provide reasonable explanations for your fears of the Sandman. Her opinions feel like a flaw, and you become distant.",
     choices: [{ text: "Play again", next: "start" }]
   },
-  SpeakOnly: {
+  speakOnly: {
     text: "Her predictable responses soothe you, and you become wholly infatuated with her. All memories of Clara, your best friend, your mother, all vanish from memory and all that exists is her. You become set on marrying her. The night ends, however, and you head back alone to your room. Suddenly, you hear a commotion in a small room to your left.",
     choices: [
       { text: "Investigate the commotion", next: "investigate" },
