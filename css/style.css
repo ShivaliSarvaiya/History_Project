@@ -126,6 +126,10 @@ h6 {
     width: 1000px;
     margin-left: 13%;
     border-radius: 5px;
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: block;
 }
 
 header {
@@ -134,6 +138,10 @@ header {
     width: 1000px;
     margin-left: 13%;
     border-radius: 5px;
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: block;
 }
 
 
@@ -360,14 +368,13 @@ em {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 20px;
+    grid-gap: 18px;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto;
     padding: 25px;
     max-width: 1200px;
     margin: auto;
 }
-
 
 .grid-item {
     background-color: #DED1B8;
@@ -411,17 +418,17 @@ button:hover {
 
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);   
-    gap: 20px;                                
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     max-width: 1200px;
-    margin: 0 auto;                         
+    margin: 0 auto;
 }
 
 .grid-item img {
     width: 100%;
     height: auto;
-    object-fit: cover;                         
-    border-radius: 10px;                      
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 details.card {
