@@ -110,16 +110,16 @@ h4 {
 }
 
 h5 {
-    background-color: #E7EAE5;
+    background-color: #d9e0d4;
     padding: 20px;
     font-size: 1.4rem;
     text-align: center;
     font-weight: 700;
     margin-bottom: 18px;
     font-family: Georgia, serif;
-  }
+}
 
- 
+
 h6 {
     font-size: 15px;
     background-color: #7db5b3;
@@ -288,7 +288,7 @@ em {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    
+
 }
 
 .grid-main-img img {
